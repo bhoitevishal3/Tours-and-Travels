@@ -4,10 +4,15 @@ public class BookingDTO {
 
 	private int booking_id;
 	private String pickup_datetime;
+	private String ret_datetime;
 	private String pickup_from;
 	private String drop_to;
 	private String ride_type;
 	private int number_of_people;
+	private int vehicle;
+	private String vehiclename;
+	
+	
 	public int getBooking_id() {
 		return booking_id;
 	}
@@ -19,6 +24,12 @@ public class BookingDTO {
 	}
 	public void setPickup_datetime(String pickup_datetime) {
 		this.pickup_datetime = pickup_datetime;
+	}
+	public String getRet_datetime() {
+		return ret_datetime;
+	}
+	public void setRet_datetime(String ret_datetime) {
+		this.ret_datetime = ret_datetime;
 	}
 	public String getPickup_from() {
 		return pickup_from;
@@ -44,6 +55,20 @@ public class BookingDTO {
 	public void setNumber_of_people(int number_of_people) {
 		this.number_of_people = number_of_people;
 	}
+	public int getVehicle() {
+		return vehicle;
+	}
+	public void setVehicle(int vehicle) {
+		this.vehicle = vehicle;
+	}
+	public String getVehiclename() {
+		return vehiclename;
+	}
+	public void setVehiclename(String vehiclename) {
+		this.vehiclename = vehiclename;
+	}
+	
+	
 	
 	
 	
